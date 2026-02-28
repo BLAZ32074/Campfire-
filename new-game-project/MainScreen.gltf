@@ -1,0 +1,1 @@
+{"asset":{"generator":"Godot Engine v4.6.1.stable.official@14d19694e0c88a3f9e82d899a0400f27a24c176e","version":"2.0"},"extensionsUsed":["GODOT_single_root"],"nodes":[{"children":[1],"name":"Control"},{"children":[2],"name":"CanvasLayer"},{"name":"Label"}],"scene":0,"scenes":[{"nodes":[0]}]}
