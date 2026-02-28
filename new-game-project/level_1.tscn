@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://l1dhtqji1d6x"]
+
+[ext_resource type="PackedScene" uid="uid://bttypp04bmonj" path="res://Maze.glb" id="1_3hls8"]
+
+[node name="Level 1" type="Node3D" unique_id=1575991859]
+
+[node name="MeshInstance3D" type="MeshInstance3D" parent="." unique_id=895227412]
+
+[node name="Maze" parent="." unique_id=403019347 instance=ExtResource("1_3hls8")]
+transform = Transform3D(0.9986811, 0.05094142, 0.006404688, -0.007219137, 0.015819985, 0.9998487, 0.050832395, -0.99857634, 0.016166912, -0.012977555, -0.006574869, -0.0007186234)
