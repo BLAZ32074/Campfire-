@@ -1,9 +1,9 @@
+SpotLight3D
 CollisionShape3D
 StaticBody3D
 CollisionPolygon3D
 OmniLight3D
 PointLight2D
-SpotLight3D
 DirectionalLight2D
 Node
 RayCast3D

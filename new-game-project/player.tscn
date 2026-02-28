@@ -1,4 +1,4 @@
-[gd_scene format=3 uid="uid://ckudr8chj1kgo"]
+[gd_scene format=3 uid="uid://duqmr2nqlungp"]
 
 [ext_resource type="Script" uid="uid://b0gd8hrqpvtbb" path="res://player.gd" id="1_4flbx"]
 
@@ -20,6 +20,14 @@ shape = SubResource("CapsuleShape3D_i3pqv")
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.75, 0)
 
 [node name="Camera3D" type="Camera3D" parent="camPos" unique_id=1820865690]
+
+[node name="SpotLight3D2" type="SpotLight3D" parent="camPos/Camera3D" unique_id=498656086]
+spot_range = 15.0
+spot_angle = 22.93
+
+[node name="SpotLight3D" type="SpotLight3D" parent="camPos/Camera3D" unique_id=1838055671]
+spot_range = 15.0
+spot_angle = 16.5
 
 [node name="RayCast3D" type="RayCast3D" parent="camPos/Camera3D" unique_id=2116346246]
 transform = Transform3D(1.2, 0, 0, 0, -5.2453668e-08, -1.2, 0, 1.2, -5.2453668e-08, 0, 0, 0)

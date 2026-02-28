@@ -1,6 +1,6 @@
 [gd_scene format=3 uid="uid://h3t3ijgav8p2"]
 
-[ext_resource type="PackedScene" path="res://player.tscn" id="1_u52ul"]
+[ext_resource type="PackedScene" uid="uid://duqmr2nqlungp" path="res://player.tscn" id="1_u52ul"]
 [ext_resource type="PackedScene" uid="uid://bttypp04bmonj" path="res://Maze.glb" id="1_vonw3"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_u52ul"]
@@ -32,5 +32,8 @@ transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="Level/StaticBody3D" unique_id=1453867325]
 shape = SubResource("ConvexPolygonShape3D_vonw3")
+
+[node name="Maze2" parent="Level" unique_id=412828774 instance=ExtResource("1_vonw3")]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, -21.994, 2.796, 22.748)
 
 [node name="player" parent="." unique_id=930361526 instance=ExtResource("1_u52ul")]
