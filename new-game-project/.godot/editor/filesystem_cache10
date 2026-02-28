@@ -1,6 +1,7 @@
 63f7b34db8d8cdea90c76aacccf841ec
-::res://::1772238871
-camera_3d.gd::GDScript::2408056121491864803::1772235431::0::1::::<>Camera3D<><>0<>0<><>::
-level.tscn::PackedScene::2748825627457095805::1772236810::0::1::::<><><>0<>0<><>::uid://ckudr8chj1kgo::::res://player.tscn
-player.gd::GDScript::4153769518018415559::1772236788::0::1::::<>CharacterBody3D<><>0<>0<><>::
-player.tscn::PackedScene::5516231605013676354::1772236788::0::1::::<><><>0<>0<><>::uid://b0gd8hrqpvtbb::::res://player.gd
+::res://::1772243564
+camera_3d.gd::GDScript::-1::1772242490::0::1::::<>Camera3D<><>0<>0<><>::
+level.tscn::PackedScene::550328542035317829::1772242961::0::1::::<><><>0<>0<><>::res://player.tscn<>uid://bttypp04bmonj::::res://Maze.glb
+Maze.glb::PackedScene::3760716712667635147::1772243564::1772243567::1::::<><><>0<>0<>cf40150a949a954d0c27311fe790b2ee<>res://.godot/imported/Maze.glb-f60b90f3abef626b53ce16dd7489d381.scn::
+player.gd::GDScript::-1::1772242490::0::1::::<>CharacterBody3D<><>0<>0<><>::
+player.tscn::PackedScene::-1::1772242502::0::1::::<><><>0<>0<><>::

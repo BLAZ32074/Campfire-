@@ -1,6 +1,7 @@
-[gd_scene format=3 uid="uid://bffs0yqr2jdrx"]
+[gd_scene format=3 uid="uid://h3t3ijgav8p2"]
 
-[ext_resource type="PackedScene" uid="uid://ckudr8chj1kgo" path="res://player.tscn" id="1_u52ul"]
+[ext_resource type="PackedScene" path="res://player.tscn" id="1_u52ul"]
+[ext_resource type="PackedScene" uid="uid://bttypp04bmonj" path="res://Maze.glb" id="1_vonw3"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_u52ul"]
 
@@ -8,22 +9,28 @@
 normal_enabled = true
 normal_texture = SubResource("PlaceholderTexture2D_u52ul")
 
+[sub_resource type="ConvexPolygonShape3D" id="ConvexPolygonShape3D_vonw3"]
+
 [node name="Scene" type="Node3D" unique_id=2117896699]
 
 [node name="Level" type="Node" parent="." unique_id=462113422]
 
+[node name="OmniLight3D" type="OmniLight3D" parent="Level" unique_id=1017142383]
+
 [node name="CSGBox3D2" type="CSGBox3D" parent="Level" unique_id=1641704722]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.035064936, -0.7386713, 4.0536785)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.825, -0.739, 9.769)
 use_collision = true
 collision_layer = 3
 collision_mask = 3
 size = Vector3(5, 5, 5)
 material = SubResource("StandardMaterial3D_vonw3")
 
-[node name="CSGBox3D" type="CSGBox3D" parent="Level" unique_id=170022099]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
-size = Vector3(10, 0.2, 10)
+[node name="Maze" parent="Level" unique_id=843542734 instance=ExtResource("1_vonw3")]
+transform = Transform3D(100, 0, 0, 0, -4.371139e-06, 100, 0, -100, -4.371139e-06, -21.993595, -1.144, 22.748457)
 
-[node name="OmniLight3D" type="OmniLight3D" parent="Level" unique_id=1017142383]
+[node name="StaticBody3D" type="StaticBody3D" parent="Level" unique_id=581738085]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Level/StaticBody3D" unique_id=1453867325]
+shape = SubResource("ConvexPolygonShape3D_vonw3")
 
 [node name="player" parent="." unique_id=930361526 instance=ExtResource("1_u52ul")]
