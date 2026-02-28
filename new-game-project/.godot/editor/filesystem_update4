@@ -1,3 +1,4 @@
 res://level.tscn
 res://player.gd
 res://player.tscn
+res://camera_3d.gd
