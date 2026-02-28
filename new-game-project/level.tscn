@@ -1,0 +1,29 @@
+[gd_scene format=3 uid="uid://bffs0yqr2jdrx"]
+
+[ext_resource type="PackedScene" uid="uid://ckudr8chj1kgo" path="res://player.tscn" id="1_u52ul"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_u52ul"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vonw3"]
+normal_enabled = true
+normal_texture = SubResource("PlaceholderTexture2D_u52ul")
+
+[node name="Scene" type="Node3D" unique_id=2117896699]
+
+[node name="Level" type="Node" parent="." unique_id=462113422]
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="Level" unique_id=1641704722]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.035064936, -0.7386713, 4.0536785)
+use_collision = true
+collision_layer = 3
+collision_mask = 3
+size = Vector3(5, 5, 5)
+material = SubResource("StandardMaterial3D_vonw3")
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Level" unique_id=170022099]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -2, 0)
+size = Vector3(10, 0.2, 10)
+
+[node name="OmniLight3D" type="OmniLight3D" parent="Level" unique_id=1017142383]
+
+[node name="player" parent="." unique_id=930361526 instance=ExtResource("1_u52ul")]
