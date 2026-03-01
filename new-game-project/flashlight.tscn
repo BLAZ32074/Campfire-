@@ -1,0 +1,6 @@
+[gd_scene format=3 uid="uid://p2e2niudilo4"]
+
+[ext_resource type="Script" path="res://flashlight.gd" id="1_nnxok"]
+
+[node name="Flashlight" type="Node3D" unique_id=1866307945]
+script = ExtResource("1_nnxok")
